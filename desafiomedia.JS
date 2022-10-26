@@ -13,9 +13,8 @@ function media() {
       throw Error('Only Numbers')
     }
     total += arguments[i]
-    
   }
-return total / qtd
+return (total / qtd) || 0
 }
-let mediaTotal = media(2, 4, 5, 7)
+let mediaTotal = media(500, 300)
 console.log(mediaTotal)
